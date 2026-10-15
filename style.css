@@ -1,3 +1,22 @@
-*{box-sizing:border-box}body{margin:0;background:#0c1525;color:#f2f5fa;font:17px/1.65 system-ui,sans-serif}main{max-width:760px;margin:auto;padding:40px 24px 64px}a{color:#8bbdf5}nav{display:flex;flex-wrap:wrap;gap:22px;margin:16px 0 32px}h1{font-size:clamp(30px,6vw,44px);line-height:1.15;letter-spacing:-1px}h2{font-size:23px;margin-top:32px}p,li{color:#c6d2e2}.panel{background:#18283d;border-radius:16px;padding:22px;margin-top:24px}.draft{border:1px solid #8bbdf5;border-radius:10px;padding:14px}footer{margin-top:40px;border-top:1px solid #34465e;padding-top:20px;font-size:14px}a:focus-visible{outline:3px solid #8bbdf5;outline-offset:5px}
-
-.home{text-align:center}.home nav{justify-content:center}.page-links{display:flex;flex-direction:column;align-items:center;gap:12px}
+*{box-sizing:border-box}
+body{margin:0;background:#0c1525;color:#f2f5fa;font:17px/1.5 system-ui,sans-serif}
+main{max-width:760px;margin:0 auto;padding:16px 20px 24px}
+a{color:#8bbdf5;overflow-wrap:anywhere}
+.site-nav{display:flex;justify-content:center;gap:8px;margin:0 0 18px}
+.site-nav a{display:flex;flex:1;align-items:center;justify-content:center;min-height:44px;padding:10px 12px;border-radius:9px;background:#18283d;color:#f2f5fa;text-decoration:none;font-size:15px;font-weight:800;text-align:center}
+.site-nav a[aria-current="page"]{background:#8bbdf5;color:#0c1525}
+.site-nav a:hover{box-shadow:inset 0 0 0 1px #8bbdf5}
+h1{font-size:clamp(30px,6vw,40px);line-height:1.2;letter-spacing:-1px;text-align:center;margin:0 0 12px}
+h2{font-size:22px;line-height:1.3;text-align:center;margin:22px 0 8px}
+p,li{color:#c6d2e2}
+p{margin:0 0 12px}
+.panel{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;background:#18283d;border-radius:12px;padding:18px 16px;margin-top:14px;text-align:center}
+.panel h2,.panel p{margin:0}
+.page-links{display:flex;flex-direction:column;align-items:center;gap:8px}
+.page-links a{display:flex;align-items:center;justify-content:center;min-height:44px;padding:4px 12px}
+footer{margin-top:22px;border-top:1px solid #34465e;padding-top:14px;text-align:center;font-size:14px}
+footer p{margin:0}
+footer a{display:inline-block;padding:6px}
+a:focus-visible{outline:3px solid #8bbdf5;outline-offset:4px}
+.home{text-align:center}
+@media(max-width:360px){main{padding:12px 14px 20px}.site-nav{gap:6px}.site-nav a{padding:10px 6px}}
